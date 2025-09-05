@@ -16,7 +16,7 @@ car_subaru.drive_to_location("Bishkek")
 print(f"Car color {car_subaru.color}, model {car_subaru.model}")
 
 car_honda.color = "red"
-print(f"Car color {car_honda.color}, model {car_honda.model}")
+print(f"Car  color {car_honda.color}, model {car_honda.model}")
 
 print(type(car_honda))
 print(type(123123))
