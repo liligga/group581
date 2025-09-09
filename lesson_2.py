@@ -16,7 +16,7 @@ class Bus(Car):
 
     # переопределяем метод в дочернем классе. сигнатура должна совпадать
     def drive_to_location(self, location):
-        print(f"Bus {self.model} is driving to {location}")
+        print(f"Bus {self.model} is driving to ")
 
     # другой метод, которого нет в родительском классе
     def test_bus(self):
@@ -29,3 +29,8 @@ print(bus_40.color)
 
 car_honda = Car("black", "Honda Civic")
 car_honda.drive_to_location("Karakol")
+
+
+vehicles = [car_honda, bus_40]
+for v in vehicles:
+    v.drive_to_location(location="Bishkek")
