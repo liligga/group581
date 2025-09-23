@@ -7,17 +7,20 @@ class Car:
     def drive_to_location(self, location):
         print(f"Car {self.model} is drinig to {location}")
 
-car_honda = Car("silver", "Honda")
-print(car_honda)
+print(f"name of module {__name__}")
 
-car_subaru = Car("black", "Subaru")
-print(car_subaru)
-car_subaru.drive_to_location("Bishkek")
-print(f"Car color {car_subaru.color}, model {car_subaru.model}")
+if __name__ == "__main__":
+    car_honda = Car("silver", "Honda")
+    print(car_honda)
 
-car_honda.color = "red"
-print(f"Car  color {car_honda.color}, model {car_honda.model}")
+    car_subaru = Car("black", "Subaru")
+    print(car_subaru)
+    car_subaru.drive_to_location("Bishkek")
+    print(f"Car color {car_subaru.color}, model {car_subaru.model}")
 
-print(type(car_honda))
-print(type(123123))
-print(type("hello world"))
+    car_honda.color = "red"
+    print(f"Car  color {car_honda.color}, model {car_honda.model}")
+
+    print(type(car_honda))
+    print(type(123123))
+    print(type("hello world"))
