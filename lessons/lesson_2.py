@@ -1,3 +1,4 @@
+from lessons.lesson_7 import create_tables
 # родитель, суперкласс
 class Car:
     # инициализатор
